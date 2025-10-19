@@ -4,7 +4,8 @@ A simple React lottery game where you win if your ticket's digits sum to **15**!
 
 ## 📸 Preview
 
-![Lottery Game Preview](./assets/preview.png)
+![Lottery Game Preview](./src/assets/preview.png)
+
 
 ## 🎮 How It Works
 
@@ -20,8 +21,7 @@ A simple React lottery game where you win if your ticket's digits sum to **15**!
 
 ```bash
 # Clone the repo
-git clone https://github.com/vineetsingh2003/lottery-game.git
-
+git clone https://github.com/vineetsingh2003/lottery-game-react.git
 # Install dependencies
 npm install
 
