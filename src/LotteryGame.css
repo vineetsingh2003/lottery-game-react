@@ -1,0 +1,148 @@
+
+
+.lottery-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lottery-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.instructions {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.5);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.ticket-section {
+    text-align: center;
+}
+
+.ticket-display {
+    background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+}
+
+.ticket-label {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.ticket-number {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 8px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.result-box {
+    padding: 20px;
+    border-radius: 12px;
+    border: 3px solid;
+    transition: all 0.3s ease;
+}
+
+.result-box.win {
+    background-color: #d4edda;
+    border-color: #28a745;
+}
+
+.result-box.lose {
+    background-color: #f8f9fa;
+    border-color: #ddd;
+}
+
+.result-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.result-box.win .result-text {
+    color: #155724;
+}
+
+.result-box.lose .result-text {
+    color: #666;
+}
+
+.no-ticket {
+    text-align: center;
+    color: #999;
+    padding: 40px 20px;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .lottery-card {
+        padding: 30px 20px;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .ticket-number {
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+    
+    .btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
